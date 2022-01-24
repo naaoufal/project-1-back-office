@@ -5,8 +5,27 @@ import 'react-toastify/dist/ReactToastify.css';
 // import './main.css'
 
 const SideBarScreen = () => {
+
+    // Our functions will be here :
+
     return (
-        <p>this is side bar screen</p>
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link">
+                    <i class="icon-grid menu-icon"></i>
+                    <span class="menu-title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="ui-basic">
+                    <i class="icon-layout menu-icon"></i>
+                    <span class="menu-title">Mes Monuments</span>
+                    <i class="menu-title"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     )
 }
 
