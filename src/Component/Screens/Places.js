@@ -15,6 +15,21 @@ const PlacesScreen = () => {
             <NavBarScreen />
             <div class="container-fluid page-body-wrapper">
                 <SideBarScreen />
+                <div className="main-panel">
+                    <div className="content-wrapper">
+                        <div className="row">
+                            <div classNameName="col-md-12 grid-margin">
+                                <div className="row">
+                                    <div className="col-12">
+                                    <span className="">Welcome Aamir</span>
+                                    <br/>
+                                    <span>this is Places Screen</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
         </div>
