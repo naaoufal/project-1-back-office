@@ -19,7 +19,7 @@ const SideBarScreen = () => {
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a onClick={() => navigation('/places')} class="nav-link">
+                    <a onClick={() => navigation('/places   ')} class="nav-link">
                     <i class="icon-layout menu-icon"></i>
                     <span class="menu-title">Mes Monuments</span>
                     <i class="menu-title"></i>
