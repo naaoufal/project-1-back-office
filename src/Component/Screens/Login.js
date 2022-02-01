@@ -2,12 +2,14 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { toast, ToastContainer, Zoom } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
+import EmailInput from '../../core/common/inputs/emailInput'
+import PasswordInput from '../../core/common/inputs/passwordInput';
 // import './main.css'
 
-const LoginScreen = () => {
+const LoginScreen = (props) => {
 
     const handleLogin = () => {
-        console.log("working")
+        console.log(props)
     }
 
     return (
@@ -21,10 +23,15 @@ const LoginScreen = () => {
                             <h6 className="font-weight-light">Sign in to continue.</h6>
                             <form className="pt-3">
                                 <div className="form-group">
-                                <input type="email" className="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email" />
+                                {/* <input type="email" className="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email" /> */}
+                                <EmailInput
+                                // onChange={(v, n) => {props.onChange(v, n)}}
+                                value={props.email} 
+                                />
                                 </div>
                                 <div className="form-group">
-                                <input type="password" className="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" />
+                                {/* <input type="password" className="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" /> */}
+                                <PasswordInput />
                                 </div>
                                 <div className="mt-3">
                                 <a className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" onClick={handleLogin} >SIGN IN</a>
