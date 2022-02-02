@@ -5,14 +5,19 @@ const EmailInput = (props) => {
     // init states :
     const [email, setEmail] = useState("")
 
-    console.log(email)
+    const onchange = (event) => {
+        if(props.onChange) {
+            console.log(event.target.value)
+        }
+    }
 
     return (
         <input
         type="email"
-        className="form-control form-control-lg" 
+        className="form-control form-control-lg"
         id="exampleInputEmail1" 
         placeholder="Email"
+        onChange={(event) => {props.onchange(event)}}
         />
     )
 }
