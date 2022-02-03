@@ -6,12 +6,14 @@ import EmailInput from '../../core/common/inputs/emailInput'
 import PasswordInput from '../../core/common/inputs/passwordInput';
 // import './main.css'
 
-const LoginScreen = (props) => {
+const LoginScreen = () => {
 
+    // init states :
     const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
 
     const handleLogin = () => {
-        console.log(props.email)
+        console.log(email, password)
     }
 
     return (
@@ -32,15 +34,23 @@ const LoginScreen = (props) => {
                             <form className="pt-3">
                                 <div className="form-group">
                                 {/* <input type="email" className="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email" /> */}
-                                <EmailInput
-                                name="email"
-                                onChange={(v, n) => props.onChange(v, n)}
-                                value={props, "email", null}
+                                <input
+                                type="email"
+                                className="form-control form-control-lg"
+                                id="exampleInputEmail1"
+                                placeholder="Email"
+                                onChange={(event) => {setEmail(event.target.value)}}
+                                value={email}
                                 />
                                 </div>
                                 <div className="form-group">
-                                {/* <input type="password" className="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" /> */}
-                                <PasswordInput />
+                                <input 
+                                type="password" 
+                                className="form-control form-control-lg" 
+                                id="exampleInputPassword1" 
+                                placeholder="Password"
+                                onChange={(event) => {setPassword(event.target.value)}}
+                                value={password} />
                                 </div>
                                 <div className="mt-3">
                                 <a className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" onClick={handleLogin} >SIGN IN</a>
