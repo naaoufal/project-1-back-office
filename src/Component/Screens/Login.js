@@ -11,7 +11,7 @@ const LoginScreen = (props) => {
     const [email, setEmail] = useState("")
 
     const handleLogin = () => {
-        console.log(email)
+        console.log(props.email)
     }
 
     return (
@@ -34,7 +34,8 @@ const LoginScreen = (props) => {
                                 {/* <input type="email" className="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email" /> */}
                                 <EmailInput
                                 name="email"
-                                value={email}
+                                onChange={(v, n) => props.onChange(v, n)}
+                                value={props, "email", null}
                                 />
                                 </div>
                                 <div className="form-group">
