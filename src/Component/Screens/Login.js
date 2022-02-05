@@ -17,15 +17,9 @@ const LoginScreen = () => {
     }
 
     return (
-        <div 
-        className="container-scroller"
-        >
-            <div 
-            className="container-fluid page-body-wrapper full-page-wrapper"
-            >
-                <div 
-                className="content-wrapper d-flex align-items-center auth px-0"
-                >
+        <div className="container-scroller">
+            <div className="container-fluid page-body-wrapper full-page-wrapper">
+                <div className="content-wrapper d-flex align-items-center auth px-0">
                     <div className="row w-100 mx-0">
                     <div className="col-lg-4 mx-auto">
                         <div className="auth-form-light text-left py-5 px-4 px-sm-5">
@@ -35,22 +29,23 @@ const LoginScreen = () => {
                                 <div className="form-group">
                                 {/* <input type="email" className="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email" /> */}
                                 <input
-                                type="email"
-                                className="form-control form-control-lg"
-                                id="exampleInputEmail1"
-                                placeholder="Email"
-                                onChange={(event) => {setEmail(event.target.value)}}
-                                value={email}
+                                    type="email"
+                                    className="form-control form-control-lg"
+                                    id="exampleInputEmail1"
+                                    placeholder="Email"
+                                    onChange={(event) => {setEmail(event.target.value)}}
+                                    value={email}
                                 />
                                 </div>
                                 <div className="form-group">
                                 <input 
-                                type="password" 
-                                className="form-control form-control-lg" 
-                                id="exampleInputPassword1" 
-                                placeholder="Password"
-                                onChange={(event) => {setPassword(event.target.value)}}
-                                value={password} />
+                                    type="password" 
+                                    className="form-control form-control-lg" 
+                                    id="exampleInputPassword1" 
+                                    placeholder="Password"
+                                    onChange={(event) => {setPassword(event.target.value)}}
+                                    value={password} 
+                                />
                                 </div>
                                 <div className="mt-3">
                                 <a className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" onClick={handleLogin} >SIGN IN</a>
