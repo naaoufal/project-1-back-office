@@ -12,6 +12,17 @@ const LoginScreen = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
+    // consuming api :
+    const loginFunction = async () => {
+        fetch("our_api", {
+            method : 'POST',
+            headers : {
+                'Content-Type' : 'application/json'
+            },
+            body : JSON.stringify({})
+        })
+    }
+
     const handleLogin = () => {
         console.log(email, password)
     }
@@ -40,7 +51,7 @@ const LoginScreen = () => {
                                 <div className="form-group">
                                 <input 
                                     type="password" 
-                                    className="form-control form-control-lg" 
+                                    className="form-control form-control-lg"
                                     id="exampleInputPassword1" 
                                     placeholder="Password"
                                     onChange={(event) => {setPassword(event.target.value)}}
