@@ -48,7 +48,6 @@ const LoginScreen = () => {
                             <h6 className="font-weight-light">Sign in to continue.</h6>
                             <form className="pt-3">
                                 <div className="form-group">
-                                {/* <input type="email" className="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email" /> */}
                                 <input
                                     type="email"
                                     className="form-control form-control-lg"
