@@ -12,19 +12,29 @@ const LoginScreen = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
-    // consuming api :
-    const loginFunction = async () => {
-        fetch("our_api", {
-            method : 'POST',
-            headers : {
-                'Content-Type' : 'application/json'
-            },
-            body : JSON.stringify({})
-        })
-    }
+    // init taost config :
+    toast.configure()
 
-    const handleLogin = () => {
-        console.log(email, password)
+    // consuming api :
+    const handleLogin = async () => {
+        if(email && password != "") {
+            fetch("http://localhost:3001/api/admins/login", {
+                method : 'POST',
+                headers : {
+                    'Content-Type' : 'application/json'
+                },
+                body : JSON.stringify({
+                    email : email,
+                    password : password
+                })
+            }).then((res) => {
+                return res.json()
+            }).then((data) => {
+                console.log(data)
+            })
+        } else {
+            toast.warning("Please Enter All Fields !!!")
+        }
     }
 
     return (
