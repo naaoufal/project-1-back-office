@@ -7,6 +7,19 @@ import SideBarScreen from './subComponent/SideBar'
 // import './main.css'
 
 const DashboardScreen = () => {
+
+    // init states :
+    const [data, setData] = useState([])
+
+    // consuming apis :
+    const getData = async () => {
+        fetch("our_api").then((res) => {
+            return res.json()
+        }).then((data) => {
+            // setData(data)
+        })
+    }
+
     return (
         <div className="container-scroller">
             <NavBarScreen />
