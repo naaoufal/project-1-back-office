@@ -17,6 +17,7 @@ const DashboardScreen = () => {
             return res.json()
         }).then((data) => {
             // setData(data)
+            console.log(data)
         })
     }
 
