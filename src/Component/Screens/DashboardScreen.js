@@ -13,6 +13,8 @@ const DashboardScreen = () => {
     let token = 'our_token'
 
     // consuming apis :
+
+    // get data from api :
     const getData = async () => {
         fetch("our_api").then((res) => {
             return res.json()
@@ -22,6 +24,7 @@ const DashboardScreen = () => {
         })
     }
 
+    // post new data :
     const postData = async () => {
         fetch("our_api", {
             method : 'POST',
@@ -38,6 +41,8 @@ const DashboardScreen = () => {
             console.log(data)
         })
     }
+
+    // delete item by ID :
 
     return (
         <div className="container-scroller">
