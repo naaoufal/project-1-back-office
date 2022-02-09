@@ -10,6 +10,7 @@ const DashboardScreen = () => {
 
     // init states :
     const [data, setData] = useState([])
+    let token = 'our_token'
 
     // consuming apis :
     const getData = async () => {
@@ -17,6 +18,23 @@ const DashboardScreen = () => {
             return res.json()
         }).then((data) => {
             // setData(data)
+            console.log(data)
+        })
+    }
+
+    const postData = async () => {
+        fetch("our_api", {
+            method : 'POST',
+            headers : {
+                'Content-Type' : 'application/json',
+                'Authorization' : 'Bearer ' + token
+            },
+            body : JSON.stringify({
+                // our body request :
+            })
+        }).then((res) => {
+            return res.json()
+        }).then((data) => {
             console.log(data)
         })
     }
