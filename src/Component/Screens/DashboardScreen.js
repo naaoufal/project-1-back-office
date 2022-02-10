@@ -43,6 +43,9 @@ const DashboardScreen = () => {
     }
 
     // delete item by ID :
+    const deleteByID = async (id) => {
+        fetch("")
+    }
 
     return (
         <div className="container-scroller">
