@@ -44,7 +44,13 @@ const DashboardScreen = () => {
 
     // delete item by ID :
     const deleteByID = async (id) => {
-        fetch("")
+        fetch(`our_api/${id}`, {
+            method : 'DELETE'
+        }).then((res) => {
+            return res.json()
+        }).then((data) => {
+            // u can do any think when data deleted :
+        })
     }
 
     return (
