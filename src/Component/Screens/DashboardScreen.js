@@ -43,6 +43,7 @@ const DashboardScreen = () => {
     }
 
     // edit data if need :
+    const editData = async () => {}
 
     // delete item by ID :
     const deleteByID = async (id) => {
