@@ -46,6 +46,8 @@ const DashboardScreen = () => {
     const editData = async () => {
         fetch("our_api").then((res) => {
             return res.json()
+        }).then((data) => {
+            // our call back function suit to promise :
         })
     }
 
