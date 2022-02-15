@@ -43,7 +43,11 @@ const DashboardScreen = () => {
     }
 
     // edit data if need :
-    const editData = async () => {}
+    const editData = async () => {
+        fetch("our_api").then((res) => {
+            return res.json()
+        })
+    }
 
     // delete item by ID :
     const deleteByID = async (id) => {
