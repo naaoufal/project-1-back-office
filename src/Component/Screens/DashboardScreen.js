@@ -62,6 +62,8 @@ const DashboardScreen = () => {
         })
     }
 
+    // render functions :
+
     return (
         <div className="container-scroller">
             <NavBarScreen />
