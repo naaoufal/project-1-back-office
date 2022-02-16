@@ -63,6 +63,9 @@ const DashboardScreen = () => {
     }
 
     // render functions :
+    useEffect(() => {
+        // our functions render :
+    }, [])
 
     return (
         <div className="container-scroller">
