@@ -8,6 +8,9 @@ import SideBarScreen from './subComponent/SideBar'
 
 const PlacesScreen = () => {
 
+    // init our states :
+    const [data, setData] = useState([])
+
     // Our functions will be here :
 
     return (
