@@ -11,7 +11,16 @@ const PlacesScreen = () => {
     // init our states :
     const [data, setData] = useState([])
 
-    // Our functions will be here :
+    // consuming apis :
+
+    // get data from api :
+    const getData = async () => {
+        fetch("our_api").then((res) => {
+            return res.json()
+        }).then((data) => {
+            // console.log(data)
+        })
+    }
 
     return (
         <div class="container-scroller">
