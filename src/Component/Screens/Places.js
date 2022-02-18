@@ -22,7 +22,19 @@ const PlacesScreen = () => {
         })
     }
 
-    // post new data !
+    // post new data :
+    const postData = async () => {
+        fetch("our_api", {
+            method : 'POST',
+            headers : {
+                'Content-Type' : 'application/json',
+            }
+        }).then((res) => {
+            return res.json()
+        }).then((data) => {
+            // our callback promise :
+        })
+    }
 
     return (
         <div class="container-scroller">
