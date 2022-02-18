@@ -22,6 +22,8 @@ const PlacesScreen = () => {
         })
     }
 
+    // post new data !
+
     return (
         <div class="container-scroller">
             <NavBarScreen />
