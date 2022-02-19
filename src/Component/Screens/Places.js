@@ -36,6 +36,9 @@ const PlacesScreen = () => {
         })
     }
 
+    // delete data by ID :
+    
+
     return (
         <div class="container-scroller">
             <NavBarScreen />
