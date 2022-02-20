@@ -28,6 +28,7 @@ const PlacesScreen = () => {
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json',
+                'Authorization' : 'Bearer ' + token
             }
         }).then((res) => {
             return res.json()
@@ -37,7 +38,20 @@ const PlacesScreen = () => {
     }
 
     // delete data by ID :
-    
+    const deletebyID = async (id) => {
+        fetch(`our_api/${id}`, {
+            method : 'DELETE'
+        }).then((res) => {
+            return res.json()
+        }).then((data) => {
+            // our callback promise :
+        })
+    }
+
+    // edit data if need :
+    const editData = async () => {
+        
+    }
 
     return (
         <div class="container-scroller">
