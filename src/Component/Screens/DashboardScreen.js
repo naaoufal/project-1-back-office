@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { toast, ToastContainer, Zoom } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
+import Drop from '../../core/common/dropdowns/drop';
+import Card from '../../core/common/elements/card';
 import NavBarScreen from './subComponent/Navbar'
 import SideBarScreen from './subComponent/SideBar'
 // import './main.css'
@@ -10,7 +12,7 @@ const DashboardScreen = () => {
 
     // init states :
     const [data, setData] = useState([])
-    let token = 'our_token'
+    // let token = 'our_token'
 
     // consuming apis :
 
@@ -30,7 +32,7 @@ const DashboardScreen = () => {
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json',
-                'Authorization' : 'Bearer ' + token
+                // 'Authorization' : 'Bearer ' + token
             },
             body : JSON.stringify({
                 // our body request :
@@ -74,15 +76,23 @@ const DashboardScreen = () => {
                 <SideBarScreen />
                 <div className="main-panel">
                     <div className="content-wrapper">
-                        <div className="row">
-                            <div classNameName="col-md-12 grid-margin">
-                                <div className="row">
-                                    <div className="col-12">
-                                    <span className="">Welcome Aamir</span>
-                                    <br/>
-                                    <span>this is Dashboard Screen</span>
+                        <div class="content-wrapper">
+                            <div className="row">
+                                <div className="col-md-12 grid-margin">
+                                    <div className="row">
+                                        <div className="col-12 col-xl-8 mb-4 mb-xl-0">
+                                            <h3 className="font-weight-bold">Welcome Naoufal</h3>
+                                        </div>
+                                        <div className="col-12 col-xl-4">
+                                            <div className="justify-content-end d-flex">
+                                                <Drop />
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="row">
+                                <Card />
                             </div>
                         </div>
                     </div>
