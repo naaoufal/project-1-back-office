@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { toast, ToastContainer, Zoom } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
-import EmailInput from '../../core/common/inputs/emailInput'
+import EmailInput from '../../core/common/inputs/textInput'
 import PasswordInput from '../../core/common/inputs/passwordInput';
 // import './main.css'
 

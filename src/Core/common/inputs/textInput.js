@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const EmailInput = (props) => {
+const EmailInput = () => {
 
     // init states :
     const [email, setEmail] = useState("")
