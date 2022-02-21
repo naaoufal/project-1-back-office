@@ -91,9 +91,7 @@ const DashboardScreen = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="row">
-                                <Card />
-                            </div>
+                            <Card />
                         </div>
                     </div>
                 </div>
