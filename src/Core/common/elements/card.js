@@ -10,14 +10,14 @@ const Card = () => {
                                 <div>
                                     <h2 className="mb-0 font-weight-normal"><i class="icon-sun mr-2"></i>31<sup>C</sup></h2>
                                 </div>
-                            <div className="ml-2">
-                                <h4 className="location font-weight-normal">Essaouira</h4>
-                                <h6 className="font-weight-normal">Morocco</h6>
+                                <div className="ml-2">
+                                    <h4 className="location font-weight-normal">Essaouira</h4>
+                                    <h6 className="font-weight-normal">Morocco</h6>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
             <div className="col-md-6 grid-margin transparent">
                 <div className="row">
