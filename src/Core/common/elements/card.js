@@ -1,4 +1,11 @@
+import { useEffect } from "react"
+
 const Card = () => {
+
+    useEffect(() => {
+        // our render functions :
+    }, [])
+
     return (
         <div className="row">
             <div className="col-md-6 grid-margin stretch-card">
