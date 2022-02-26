@@ -1,6 +1,9 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 const Card = () => {
+
+    // init states :
+    const [data, setData] = useState([])
 
     useEffect(() => {
         // our render functions :
