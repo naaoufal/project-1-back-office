@@ -5,6 +5,11 @@ const Card = () => {
     // init states :
     const [data, setData] = useState([])
 
+    // post new data :
+    const postData = async () => {
+        
+    }
+
     useEffect(() => {
         // our render functions :
     }, [])
