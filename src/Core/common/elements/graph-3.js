@@ -136,44 +136,44 @@ const Graph3 = () => {
                                                 <td><h5 className="font-weight-bold mb-0">664</h5></td>
                                             </tr>
                                             <tr>
-                                      <td className="text-muted">Egypt</td>
-                                      <td className="w-100 px-0">
-                                        <div className="progress progress-md mx-4">
-                                          {/* <div className="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div> */}
-                                        </div>
-                                      </td>
-                                      <td><h5 className="font-weight-bold mb-0">560</h5></td>
-                                    </tr>
-                                    <tr>
-                                      <td className="text-muted">Algeria</td>
-                                      <td className="w-100 px-0">
-                                        <div className="progress progress-md mx-4">
-                                          {/* <div className="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> */}
-                                        </div>
-                                      </td>
-                                      <td><h5 className="font-weight-bold mb-0">793</h5></td>
-                                    </tr>
-                                  </table>
+                                                <td className="text-muted">Egypt</td>
+                                                <td className="w-100 px-0">
+                                                    <div className="progress progress-md mx-4">
+                                                        {/* <div className="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div> */}
+                                                    </div>
+                                                </td>
+                                                <td><h5 className="font-weight-bold mb-0">560</h5></td>
+                                            </tr>
+                                            <tr>
+                                                <td className="text-muted">Algeria</td>
+                                                <td className="w-100 px-0">
+                                                    <div className="progress progress-md mx-4">
+                                                        {/* <div className="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> */}
+                                                    </div>
+                                                </td>
+                                                <td><h5 className="font-weight-bold mb-0">793</h5></td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </div>
-                              </div>
-                              <div className="col-md-6 mt-3">
-                                <canvas id="south-america-chart"></canvas>
-                                <div id="south-america-legend"></div>
-                              </div>
+                                <div className="col-md-6 mt-3">
+                                    <canvas id="south-america-chart"></canvas>
+                                    <div id="south-america-legend"></div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
-                    <a className="carousel-control-prev" href="#detailedReports" role="button" data-slide="prev">
-                      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span className="sr-only">Previous</span>
-                    </a>
-                    <a className="carousel-control-next" href="#detailedReports" role="button" data-slide="next">
-                      <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span className="sr-only">Next</span>
-                    </a>
-                  </div>
+                </div>
+            </div>
+                <a className="carousel-control-prev" href="#detailedReports" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
+                </a>
+                <a className="carousel-control-next" href="#detailedReports" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
+                </a>
+                </div>
             </div>
         </div>
     )
