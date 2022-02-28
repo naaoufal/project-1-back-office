@@ -4,6 +4,7 @@ import { toast, ToastContainer, Zoom } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 import Drop from '../../core/common/dropdowns/drop';
 import Card from '../../core/common/elements/card';
+import Graph1 from '../../core/common/elements/graph-1';
 import NavBarScreen from './subComponent/Navbar'
 import SideBarScreen from './subComponent/SideBar'
 // import './main.css'
@@ -92,6 +93,11 @@ const DashboardScreen = () => {
                                 </div>
                             </div>
                             <Card />
+                            <div className="row">
+                                <div class="col-md-6 grid-margin stretch-card">
+                                    <Graph1 />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
