@@ -10,6 +10,12 @@ const Graph3 = () => {
         // consuming our api :
     }
 
+    // edit elements by ID :
+    const editData = async (id) => {
+        // consuming api :
+        fetch("")
+    }
+
     // delete data by ID :
     const deleteByID = async (id) => {
         // consuming api
