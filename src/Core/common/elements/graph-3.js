@@ -1,5 +1,4 @@
-import { useEffect } from "react"
-import { useState } from "react/cjs/react.production.min"
+import { useEffect, useState } from "react"
 
 const Graph3 = () => {
 
@@ -9,6 +8,11 @@ const Graph3 = () => {
     // get data from api : 
     const getData = async () => {
         // consuming our api :
+    }
+
+    // delete data by ID :
+    const deleteByID = async (id) => {
+        // consuming api
     }
 
     // handle side effect of component :
