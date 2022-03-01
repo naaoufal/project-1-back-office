@@ -1,4 +1,10 @@
+import { useState } from "react/cjs/react.production.min"
+
 const Graph3 = () => {
+
+    // init states :
+    const [data, setData] = useState([])
+
     return (
         <div className="card position-relative">
             <div className="card-body">
