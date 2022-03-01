@@ -5,6 +5,13 @@ const Graph3 = () => {
     // init states :
     const [data, setData] = useState([])
 
+    // get data from api : 
+    const getData = async () => {
+        // consuming our api :
+    }
+
+    
+
     return (
         <div className="card position-relative">
             <div className="card-body">
