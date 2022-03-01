@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { useState } from "react/cjs/react.production.min"
 
 const Graph3 = () => {
@@ -10,7 +11,8 @@ const Graph3 = () => {
         // consuming our api :
     }
 
-    
+    // handle side effect of component :
+    useEffect(() => {}, [])
 
     return (
         <div className="card position-relative">
