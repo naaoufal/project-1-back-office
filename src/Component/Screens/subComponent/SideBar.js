@@ -19,7 +19,7 @@ const SideBarScreen = () => {
         //             </a>
         //         </li>
         //         <li class="nav-item">
-        //             <a onClick={() => navigation('/places   ')} class="nav-link">
+        //             <a onClick={() => navigation('/places')} class="nav-link">
         //             <i class="icon-layout menu-icon"></i>
         //             <span class="menu-title">Mes Monuments</span>
         //             <i class="menu-title"></i>
@@ -30,7 +30,7 @@ const SideBarScreen = () => {
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="#" onClick={() => navigation('/dashboard')}>
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
@@ -118,8 +118,8 @@ const SideBarScreen = () => {
             </a>
             <div class="collapse" id="error">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="#" onClick={() => navigation('/404')}> 404 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="#" onClick={() => navigation('/500')}> 500 </a></li>
               </ul>
             </div>
           </li>
